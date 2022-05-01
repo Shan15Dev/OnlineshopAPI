@@ -5,7 +5,7 @@ namespace OnlineShopAPI.Model;
 
 public class ProductModel
 {
-    [Key] public int Id { get; set; }
+    [Key] public string Id { get; set; }
     [Required] [MaxLength(45)] public string Product { get; set; }
 
     [ForeignKey("BrandModel")] public int Brand_id { get; set; }

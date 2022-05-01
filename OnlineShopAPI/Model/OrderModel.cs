@@ -5,7 +5,7 @@ namespace OnlineShopAPI.Model;
 
 public class OrderModel
 {
-    [Key] public int Id { get; set; }
+    [Key] public string Id { get; set; }
     [Required] [MaxLength(45)] public DateTime Storage { get; set; }
     
     [ForeignKey("CustomerModel")]

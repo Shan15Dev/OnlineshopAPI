@@ -5,7 +5,7 @@ namespace OnlineShopAPI.Model;
 
 public class RatingModel
 {
-    [Key] public int Id { get; set; }
+    [Key] public string Id { get; set; }
     [Required] public Decimal StarRating { get; set; }
     [ForeignKey("ProductModel")] public int Product_id { get; set; }
 
