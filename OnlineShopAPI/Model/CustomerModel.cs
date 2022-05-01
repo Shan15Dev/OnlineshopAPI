@@ -9,5 +9,5 @@ public class CustomerModel
     [Required] [MaxLength(45)] public string Firstname { get; set; }
     [Required] [MaxLength(45)] public string Address { get; set; }
     [Required] public int PostalCode { get; set; }
-    [Required] public string Place { get; set; }
+    [Required] [MaxLength(45)] public string Place { get; set; }
 }
